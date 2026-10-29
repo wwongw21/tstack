@@ -37,7 +37,9 @@ cp -R tstack/skills/* ~/.codex/skills/    # Codex
 ## Requirements
 
 - An authenticated [GitHub CLI](https://cli.github.com) (`gh`).
-- `python3` for `babysit-pr`'s `pr-wait` script.
+- Python 3.10 or newer for `babysit-pr`'s `pr-wait` script. On Windows, run
+  `python path/to/pr-wait --help`; on macOS and Linux, use `python3` or run the
+  executable script directly. Its watcher lock works on all three platforms.
 - `council` and `sol-loop` need subagents on other providers' models. T3 Code
   does this with `delegate_task`. Otherwise you need a harness that can run
   those models.
